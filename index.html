@@ -14,56 +14,51 @@ layout: none
   </script>
 </head>
 <body>
-  <header>
-     <h1>MT4NLP - Metamorphic Relations Catalog For Testing NLP Systems</h1>
-    <p>A systematic list of 191 metamorphic relations for NLP tasks.</p>
+ <header>
+    <div class="title-row">
+  <img src="https://teachwell.auckland.ac.nz/files/2025/05/UoA-Logo-Primary-RGB-Small.png" 
+       alt="University of Auckland Logo" style="max-height:40px;">
+  <h1>MT4NLP - Metamorphic Relations Catalog For Testing NLP Systems</h1>
+</div>
+
+    <p>This catalog contains a collection of <strong>191 metamorphic relations (MRs)</strong> for testing natural language processing (NLP) systems.</p>
+    <p>Metamorphic testing is a technique that helps to identify potential issues in software by checking if the outputs of a system change in expected ways when the inputs are modified.</p>
     <p><em>Note:</em> These metamorphic relations were used in the paper for testing Large Language Models (LLMs), but they are general and applicable to any NLP system.</p>
-       
+    
     <p><strong>Contributors:</strong> Steven Cho, Stefano Ruberto, 
       <a href="https://valerio-terragni.github.io/" target="_blank">Valerio Terragni</a>
     </p>
-  <br>
-  <img src="https://teachwell.auckland.ac.nz/files/2025/05/UoA-Logo-Primary-RGB-Small.png" 
-       alt="University of Auckland Logo" style="max-height:60px; display:block; margin:10px auto 20px auto;">
-  <br>
+
     <p>For the paper: 
-        <strong>Metamorphic Testing of Large Language Models for Natural Language Processing</strong>
-      <a href="https://valerio-terragni.github.io/assets/pdf/cho-icsme-2025.pdf" target="_blank">
-       downlaod PDF
-      </a>
-      <br>
-      accepted at the 41st IEEE International Conference on Software Maintenance and Evolution (<a href="https://conf.researchr.org/home/icsme-2025" target="_blank">ICSME 2025</a>- research track)
+      <strong>Metamorphic Testing of Large Language Models for Natural Language Processing</strong> — 
+      <a href="https://valerio-terragni.github.io/assets/pdf/cho-icsme-2025.pdf" target="_blank">Download PDF</a><br>
+      Accepted at the 41st IEEE International Conference on Software Maintenance and Evolution 
+      (<a href="https://conf.researchr.org/home/icsme-2025" target="_blank">ICSME 2025</a> — research track)
     </p>
-    <p>Some MRs in this list are implemented in our tool: 
-        LLMorph: Metamorphic Testing of Large Language Models <br>
-     ><a href="https://github.com/steven-b-cho/llmorph" target="_blank">
+
+    <p>Some MRs in this list are implemented in our tool: <str
+ong> LLMorph: Metamorphic Testing of Large Language Models</strong>, which is available on GitHub:
+      <a href="https://github.com/steven-b-cho/llmorph" target="_blank">
         https://github.com/steven-b-cho/llmorph
       </a>
     </p>
+
     <p>GitHub repository for this catalog: 
       <a href="https://github.com/mt4llm/mt4llm.github.io" target="_blank">
         https://github.com/mt4llm/mt4llm.github.io
       </a>
     </p>
+
     <p><strong>How to contribute with new MRs:</strong> Fork the repository, add your new MRs, and submit a pull request (PR) with your changes. Make sure your PR clearly describes the new metamorphic relations and associated tasks.</p>
   
     <section class="relation-explanation">
-    <h2>Understanding IR and OR</h2>
-    <p>
-      In this catalog, each Metamorphic Relation (MR) consists of:
-    </p>
-    <ul>
-      <li><strong>IR (Input Relation):</strong> Describes the input relations of the inputs.</li>
-      <li><strong>OR (Output Relation):</strong> Describes the expected relation of their corresponding outputs</li>
-    </ul>
-        <p>
-      See at the end of this page for a list of task acronyms.
-    </p>
-  </section>
-
-  
-  
-  
+      <p>In this catalog, each Metamorphic Relation (MR) consists of:</p>
+      <ul>
+        <li><strong>IR (Input Relation):</strong> Describes the input relations of the inputs.</li>
+        <li><strong>OR (Output Relation):</strong> Describes the expected relation of their corresponding outputs.</li>
+      </ul>
+      <p>See at the end of this page for a list of task acronyms.</p>
+    </section>
   </header>
 
   <section class="controls">
@@ -94,7 +89,6 @@ layout: none
       </details>
     </article>
   </template>
-
 
   <section class="task-acronyms">
     <h2>Task Acronyms</h2>
