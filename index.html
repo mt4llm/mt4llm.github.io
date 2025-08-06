@@ -1,0 +1,55 @@
+---
+layout: none
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Metamorphic Relations Catalog</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Metamorphic Relations Catalog</h1>
+    <p>A systematic list of metamorphic relations for NLP tasks.</p>
+    <p>For the paper: <a href="https://valerio-terragni.github.io/assets/pdf/cho-icsme-2025.pdf">Metamorphic Testing of Large Language Models for Natural Language Processing</a></p>
+    <p>Related tool: <a href="https://github.com/steven-b-cho/llmorph">LLMorph: Metamorphic Testing of Large Language Models</a></p>
+  </header>
+
+  <section class="controls">
+    <input id="search" type="search" placeholder="Search IR/OR…">
+    <label>
+      Filter by task:
+      <select id="taskFilter">
+        <option value="">All tasks</option>
+      </select>
+    </label>
+  </section>
+
+  <main id="list" aria-live="polite"></main>
+
+  <template id="mrTemplate">
+    <article class="mr">
+      <h2>MR <span class="mr-id"></span></h2>
+      <div class="meta">
+        <span class="tasks"></span>
+      </div>
+      <div class="rr">
+        <div class="ri"><strong>IR:</strong> <span></span></div>
+        <div class="ro"><strong>OR:</strong> <span></span></div>
+      </div>
+      <details class="refs">
+        <summary>References (<span class="ref-count"></span>)</summary>
+        <ul class="ref-list"></ul>
+      </details>
+    </article>
+  </template>
+
+  <script src="/assets/main.js"></script>
+</body>
+</html>
