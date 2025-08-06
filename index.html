@@ -6,7 +6,7 @@ layout: none
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Metamorphic Relations Catalog</title>
+  <title>MT4NLP - Metamorphic Relations Catalog For Testing NLP Systems</title>
   <link rel="stylesheet" href="/assets/style.css">
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async
@@ -15,10 +15,55 @@ layout: none
 </head>
 <body>
   <header>
-    <h1>Metamorphic Relations Catalog</h1>
-    <p>A systematic list of metamorphic relations for NLP tasks.</p>
-    <p>For the paper: <a href="https://valerio-terragni.github.io/assets/pdf/cho-icsme-2025.pdf">Metamorphic Testing of Large Language Models for Natural Language Processing</a></p>
-    <p>Related tool: <a href="https://github.com/steven-b-cho/llmorph">LLMorph: Metamorphic Testing of Large Language Models</a></p>
+     <h1>MT4NLP - Metamorphic Relations Catalog For Testing NLP Systems</h1>
+    <p>A systematic list of 191 metamorphic relations for NLP tasks.</p>
+    <p><em>Note:</em> These metamorphic relations were used in the paper for testing Large Language Models (LLMs), but they are general and applicable to any NLP system.</p>
+       
+    <p><strong>Contributors:</strong> Steven Cho, Stefano Ruberto, 
+      <a href="https://valerio-terragni.github.io/" target="_blank">Valerio Terragni</a>
+    </p>
+  <br>
+  <img src="https://teachwell.auckland.ac.nz/files/2025/05/UoA-Logo-Primary-RGB-Small.png" 
+       alt="University of Auckland Logo" style="max-height:60px; display:block; margin:10px auto 20px auto;">
+  <br>
+    <p>For the paper: 
+        <strong>Metamorphic Testing of Large Language Models for Natural Language Processing</strong>
+      <a href="https://valerio-terragni.github.io/assets/pdf/cho-icsme-2025.pdf" target="_blank">
+       downlaod PDF
+      </a>
+      <br>
+      accepted at the 41st IEEE International Conference on Software Maintenance and Evolution (<a href="https://conf.researchr.org/home/icsme-2025" target="_blank">ICSME 2025</a>- research track)
+    </p>
+    <p>Some MRs in this list are implemented in our tool: 
+        LLMorph: Metamorphic Testing of Large Language Models <br>
+     ><a href="https://github.com/steven-b-cho/llmorph" target="_blank">
+        https://github.com/steven-b-cho/llmorph
+      </a>
+    </p>
+    <p>GitHub repository for this catalog: 
+      <a href="https://github.com/mt4llm/mt4llm.github.io" target="_blank">
+        https://github.com/mt4llm/mt4llm.github.io
+      </a>
+    </p>
+    <p><strong>How to contribute with new MRs:</strong> Fork the repository, add your new MRs, and submit a pull request (PR) with your changes. Make sure your PR clearly describes the new metamorphic relations and associated tasks.</p>
+  
+    <section class="relation-explanation">
+    <h2>Understanding IR and OR</h2>
+    <p>
+      In this catalog, each Metamorphic Relation (MR) consists of:
+    </p>
+    <ul>
+      <li><strong>IR (Input Relation):</strong> Describes the input relations of the inputs.</li>
+      <li><strong>OR (Output Relation):</strong> Describes the expected relation of their corresponding outputs</li>
+    </ul>
+        <p>
+      See at the end of this page for a list of task acronyms.
+    </p>
+  </section>
+
+  
+  
+  
   </header>
 
   <section class="controls">
@@ -49,6 +94,37 @@ layout: none
       </details>
     </article>
   </template>
+
+
+  <section class="task-acronyms">
+    <h2>Task Acronyms</h2>
+    <ul>
+      <li><strong>CM</strong>: Content moderation — Detecting inappropriate or harmful content in a text (11 MRs)</li>
+      <li><strong>CR</strong>: Coreference resolution — Determining which words in a text refer to the same entity (1 MR)</li>
+      <li><strong>DS</strong>: Dialogue system — Conversing with humans (7 MRs)</li>
+      <li><strong>DSp</strong>: Dialogue system (persona-based) — Conversing with humans while maintaining a consistent personality (5 MRs)</li>
+      <li><strong>FN</strong>: Fake news detection — Detecting whether a text has false or misleading information (9 MRs)</li>
+      <li><strong>IR</strong>: Information retrieval — Finding relevant information from a text (10 MRs)</li>
+      <li><strong>LSR</strong>: Lexical semantic relations — Analysing relationship between words (1 MR)</li>
+      <li><strong>NER</strong>: Named entity recognition — Identifying and classifying words into categories (17 MRs)</li>
+      <li><strong>NLI</strong>: Natural language inference — Determining whether a hypothesis follows from a premise (10 MRs)</li>
+      <li><strong>PD</strong>: Plagiarism detection — Detecting instances of copied or unoriginal text (1 MR)</li>
+      <li><strong>PDq</strong>: Plagiarism detection (query-based) — Detecting instances of copied or unoriginal text using a specific query (7 MRs)</li>
+      <li><strong>PST</strong>: Part-of-speech tagging — Classifying words into grammatical categories (4 MRs)</li>
+      <li><strong>QA</strong>: Question answering — Answering questions in natural language, using no context (25 MRs)</li>
+      <li><strong>QAb</strong>: Question answering (boolean) — Answering true or false questions, using no context (7 MRs)</li>
+      <li><strong>QAc</strong>: Question answering (incl. context) — Answering questions in natural language, using context (14 MRs)</li>
+      <li><strong>QAm</strong>: Question answering (multi-choice) — Answering multi-choice questions, using no context (8 MRs)</li>
+      <li><strong>RE</strong>: Relation extraction — Identifying relationships between two entities in a text (8 MRs)</li>
+      <li><strong>SA</strong>: Sentiment analysis — Determining how positive or negative a text is (32 MRs)</li>
+      <li><strong>SD</strong>: Stance detection — Determining the agreement between two texts (1 MR)</li>
+      <li><strong>SM</strong>: Summarisation — Condensing text while retaining key information (17 MRs)</li>
+      <li><strong>TC</strong>: Text classification — Determining whether a text falls into predefined categories (17 MRs)</li>
+      <li><strong>TD</strong>: Toxicity detection — Identifying whether a text is offensive or harmful (10 MRs)</li>
+      <li><strong>TR</strong>: Translation — Converting text from one language to another (24 MRs)</li>
+      <li><strong>TS</strong>: Text similarity — Determining the similarity between two texts (8 MRs)</li>
+    </ul>
+  </section>
 
   <script src="/assets/main.js"></script>
 </body>
